@@ -10,9 +10,9 @@ function calculate() {
         const amountToUser = totalIncomeInt - amountToSoderzanka;
         
         document.getElementById('result').innerHTML = `
-            <p>Общий доход: ${totalIncomeInt.toLocaleString('ru-RU')} тыс. руб.</p>
-            <p>Доход содержанке (${percentageInt}%): ${amountToSoderzanka.toLocaleString('ru-RU')} тыс. руб.</p>
-            <p>Ваш доход: ${amountToUser.toLocaleString('ru-RU')} тыс. руб.</p>
+            <p>Общий доход: ${totalIncomeInt.toLocaleString('ru-RU')} руб.</p>
+            <p>Доход содержанке (${percentageInt}%): ${amountToSoderzanka.toLocaleString('ru-RU')} руб.</p>
+            <p>Ваш доход: ${amountToUser.toLocaleString('ru-RU')} руб.</p>
         `;
     } else {
         document.getElementById('result').innerHTML = '<p>Пожалуйста, заполните все поля.</p>';
